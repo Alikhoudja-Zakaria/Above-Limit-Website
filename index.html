@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="navstart">
+        <ul>
+          <li class="menu" onclick="mineur()"><i class="bx bx-menu"></i></li>
+          <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="./test.html">Articles</a></li>
+          <li class="hideOnMobile">
+            <a href="./display.html">Products</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navmiddle"></div>
+      <div class="navend">
+        <ul>
+          <li>ABOVE LIMIT</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="robotii">
+
+      <<iframe src='https://my.spline.design/nexbotrobotcharacterconceptcopy-87b234bdde6c4eb0e510808efc1a95f9/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+<!-- Intro Section -->
+<section id="intro" class="full-screen">
+  <div class="intro-content">
+    <h1 id="dynamic-title">Welcome to <span id="typed"></span></h1>
+    <p>Your go-to platform for resources and support for the disabled community.</p>
+  </div>
+  <div id="custom-content"></iframe></div>
+</section>
+
+<script>
+// Typewriting Effect
+const phrases = ["Empowerment", "Support", "Innovation", "Community"];
+let currentPhraseIndex = 0;
+let currentCharIndex = 0;
+
+function type() {
+  const typedElement = document.getElementById("typed");
+  typedElement.textContent = phrases[currentPhraseIndex].substring(0, currentCharIndex);
+  
+  if (currentCharIndex < phrases[currentPhraseIndex].length) {
+    currentCharIndex++;
+    setTimeout(type, 150); // Typing speed
+  } else {
+    currentCharIndex = 0;
+    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+    setTimeout(type, 1000); // Wait before starting the next word
+  }
+}
+
+window.onload = () => {
+  type();
+};
+</script>
+
+
+
+
+<!-- Header -->
+<header>
+  <h1>Website's Unique Features</h1>
+  <p>Your one-stop platform for finding disability support services.</p>
+</header>
+
+<!-- Features Section -->
+<section id="features">
+  <div class="feature-card" onclick="toggleCard(this)">
+    <h2>Comprehensive Resource Directory</h2>
+    <div class="content">
+      <p>Search and explore support groups and organizations tailored to your needs.</p>
+      <input type="text" id="searchBar" placeholder="Search for support groups...">
+      <button onclick="searchResources()">Search</button>
+    </div>
+  </div>
+
+  <div class="feature-card" onclick="toggleCard(this)">
+    <h2>AI-Powered Assistance</h2>
+    <div class="content">
+      <p>Chat with our AI assistant to find personalized support.</p>
+      <div id="chat-box">
+        <p><strong>Bot:</strong> How can I assist you today?</p>
+        <input type="text" id="userMessage" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-card" onclick="toggleCard(this)">
+    <h2>User-Friendly Design</h2>
+    <div class="content">
+      <p>Our platform is designed for accessibility. Adjust text size or toggle contrast.</p>
+      <button onclick="increaseTextSize()">Increase Text Size</button>
+      <button onclick="decreaseTextSize()">Decrease Text Size</button>
+      <button onclick="toggleContrast()">Toggle High Contrast</button>
+    </div>
+  </div>
+
+  <div class="feature-card" onclick="toggleCard(this)">
+    <h2>Success Stories and Testimonials</h2>
+    <div class="content">
+      <blockquote>
+        <p>"Thanks to this platform, I found the perfect support group that helped me regain my independence."</p>
+        <footer>- Sarah, visually impaired</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+<!--<div class="wavyy">
+<iframe src='https://my.spline.design/flowingribbon-3b57e7e7eef7dd831334241ccf1898bf/' frameborder='0' width='100%' height='100%'></iframe>
+</div> -->
+
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+  <header>
+    <h1>What do people think about this Website !</h1>
+    <p>See what some users think about the website !</p>
+  </header>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"This platform has changed my life! The resources available are invaluable."</p>
+      <span>- John Doe</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"The community support is amazing. I found the help I needed quickly."</p>
+      <span>- Jane Smith</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"I love the AI chatbot! It answered all my questions in no time."</p>
+      <span>- Mike Johnson</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Great experience! I highly recommend this platform to others."</p>
+      <span>- Sarah Brown</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"A fantastic resource for the disabled community. Thank you!"</p>
+      <span>- Emily Davis</span>
+    </div>
+    <!-- Duplicate testimonials for infinite scroll -->
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"This platform has changed my life! The resources available are invaluable."</p>
+      <span>- John Doe</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"The community support is amazing. I found the help I needed quickly."</p>
+      <span>- Jane Smith</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"I love the AI chatbot! It answered all my questions in no time."</p>
+      <span>- Mike Johnson</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Great experience! I highly recommend this platform to others."</p>
+      <span>- Sarah Brown</span>
+    </div>
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"A fantastic resource for the disabled community. Thank you!"</p>
+      <span>- Emily Davis</span>
+    </div>
+  </div>
+</section>
+
+<!-- Additional Square Cards Section -->
+<section id="additional-features">
+  <div class="square-card" onclick="toggleDetails(this)">
+    <img src="" alt="Articles Image">
+    <h2>Articles</h2>
+    <div class="details">
+      <p>Find in-depth articles and resources related to disability support and community building.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+
+  <div class="square-card" onclick="toggleDetails(this)">
+    <img src="" alt="AI Chat Bot Image">
+    <h2>AI Chat Bot</h2>
+    <div class="details">
+      <p>Our intelligent AI assistant is ready to help you find personalized resources at any time.</p>
+      <button>Chat Now</button>
+    </div>
+  </div>
+
+  <div class="square-card" onclick="toggleDetails(this)">
+    <img src="" alt="Organizations Image">
+    <h2>Organizations</h2>
+    <div class="details">
+      <p>Explore a variety of support organizations tailored to the needs of the disabled community.</p>
+      <button>Discover More</button>
+    </div>
+  </div>
+</section>
+
+<div class="glassy">
+    <iframe src='https://my.spline.design/oakleyplazmalandingpageconcept-a7cf9c205f4c09785033b9147ae83f2b/' frameborder='0' width='100%' height='100%'></iframe>
+
+</div>
+    
+     <script src="./app.js"></script>
+    
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=Jstlz99b"></script>
+  </body>
+</html>
