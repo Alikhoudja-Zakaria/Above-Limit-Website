@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Articles.css">
+  </head>
+  <body>
+  
+        <nav id="navbar">
+            <div class="navstart">
+              <ul>
+                <li class="menu" onclick="mineur()"><i class="bx bx-menu"></i></li>
+                <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="./Articles.html">Articles</a></li>
+                <li class="hideOnMobile"><a href="./organizations.html">organizations</a></li>
+                <li class="hideOnMobile">
+                  <a href="./Products.html">Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navmiddle"></div>
+            <div class="navend">
+              <ul>
+                <li>ABOVE LIMIT</li>
+              </ul>
+            </div>
+          </nav>
+
+                                      
+           
+
+          <div class="robotii">
+            <iframe src='https://my.spline.design/particles-93ac938700630c0e6b204d7c781a6ee8/' frameborder='0' width='100%' height='60%'></iframe>   
+
+    <main>
+      <section id="articles">
+        <h2>Articles</h2>
+        <div class="trending">
+          <h3>Trending</h3>
+          <div class="tiles">
+            <div class="tile" data-article="1">Advances in Assistive Technology for the Visually Impaired</div>
+            <div class="tile" data-article="2">Inclusive Education: Challenges and Opportunities</div>
+            <div class="tile" data-article="3">Employment Opportunities for People with Disabilities</div>
+            <div class="tile" data-article="4">The Role of AI in Enhancing Accessibility</div>
+            <div class="tile" data-article="5">Mental Health Support for People with Disabilities</div>
+          </div>
+        </div>
+
+        <div class="new">
+          <h3>New</h3>
+          <div class="tiles">
+            <div class="tile" data-article="1">Accessible Design: Making the World More Inclusive</div>
+            <div class="tile" data-article="3">Breaking Stigmas: Changing Perceptions Around Disability</div>
+            <div class="tile" data-article="2">How Technology Empowers Independent Living for the Disabled Community</div>
+            <div class="tile" data-article="5">Legal Rights for People with Disabilities: Progress and Gaps</div>
+            <div class="tile" data-article="4"> How Sports and Recreation Impact Quality of Life for People with Disabilities</div>
+          </div>
+        </div>
+
+        <button id="seeAll">See All</button>
+      </section>
+
+      <section id="videos">
+        <h2>Videos</h2>
+        <div class="video-tiles">
+          <div class="video-tile">
+            <iframe
+              width="350"
+              height="195"
+              src="https://www.youtube.com/embed/yH5Ds4_0lO8?si=gf8_Umxvx6NEk7zW"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h1>Why the dyslexic brain is misunderstood ?</h1>
+          </div>
+          <div class="video-tile">
+            <iframe
+              width="350"
+              height="195"
+              src="https://www.youtube.com/embed/3Hqws_ON3rY?si=WruuDK2RXc0Fsu1n"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h1>What is an Intellectual Disability? Lesson for Kids</h1>
+          </div>
+          <div class="video-tile">
+            <iframe
+              width="350"
+              height="195"
+              src="https://www.youtube.com/embed/4BaGaxzutHI?si=oPKCefXUltEmSNvJ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h1>Disability - The WelCond research project</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for article content display -->
+    <div id="articleModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="articleText"></p>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="social-section">
+                <p>Follow and Support Us !</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/facebook-logo-24.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/instagram-logo-24 (1).png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/tiktok-logo-24.png" alt="TikTok"></a>
+                </div>
+                <p>Above Limit in your pocket</p>
+                <div class="app-links">
+                    <a href="#"><img src="./images/pngegg (1).png" alt="App Store"></a>
+             
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Products Catalogue</a></li>
+                    <li><a href="#">Glasses</a></li>
+                    <li><a href="#">AI</a></li>
+                </ul>
+            </div>
+      
+            <div class="footer-column">
+                <h3>Service conso</h3>
+                <ul>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">frequently asked questions </a></li>
+                    <li><a href="#">Above Limit hears you</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal Informations</h3>
+                <ul>
+                    <li><a href="#">Legal Mentions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Data protection policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Join US</h3>
+                <ul>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Legal Mentions - CGU - CGV - Personal data protection policy - No Cookies !</p>
+            <p>For your health, eat at least five fruits and vegetables a day.</p>
+            <p>FOR US DEPARTENT OF STATE</p>
+        </div>
+      </footer>
+        </body>
+      
+        </html>
+          <script src="./js/articles.js"></script>
+           <script src="./js/app.js"></script>
+           <script src="./js/script.js"></script>
+          
+          <script src="https://code.responsivevoice.org/responsivevoice.js?key=Jstlz99b"></script>
+        </body>
+      </html>
+      
+
+    <script src="./js/articles.js"></script>
+    
+    
+  </body>
+</html>

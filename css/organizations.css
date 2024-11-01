@@ -1,0 +1,253 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: black;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Landing Section */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33vh;
+    background: url('../images/organizations-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.landing-content {
+    max-width: 600px;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #ff4c3b;
+}
+
+/* Filter and Tiles Section */
+.tiles-section {
+    padding: 2rem;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button.active {
+    background-color: #ff6f61; /* Highlight active button */
+}
+
+.filter-buttons button:hover {
+    background-color: #555;
+}
+
+/* Tiles Layout */
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Individual Tile */
+.tile {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-basis: calc(50% - 1rem); /* Two tiles per row */
+    opacity: 0; /* Start as hidden for fade-in effect */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+.tile.show {
+    opacity: 1; /* Make visible when shown */
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.616);
+}
+
+/* Tile Content */
+.tile img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-right: 1rem; /* Space between image and text */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Button to See More */
+#seeMoreBtn {
+    padding: 0.75rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem auto;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+#seeMoreBtn:hover {
+    background-color: #555;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tiles {
+        flex-direction: column; /* Stack tiles in a single column */
+    }
+
+    .tile {
+        flex-basis: 100%; /* Full width on small screens */
+    }
+}
+
+
+/* Services Section */
+.services-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #121212; /* Dark background for contrast */
+    color: #ffffff; /* Light text color */
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Service Tiles */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service-tile {
+    background-color: #ffffff; /* White tile background */
+    color: #333; /* Dark text */
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden; /* Hide expanded content initially */
+    position: relative; /* Position for expanding */
+    max-height: 80px; /* Set initial height */
+}
+
+.service-tile .service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.service-tile .service-content {
+    display: none; /* Hidden until clicked */
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Expanded State */
+.service-tile.expanded {
+    max-height: 200px; /* Increased height for expanded view */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow when expanded */
+    padding: 1.5rem;
+}
+
+.service-tile.expanded .service-content {
+    display: block; /* Show content in expanded view */
+}
+
+.service-tile:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}

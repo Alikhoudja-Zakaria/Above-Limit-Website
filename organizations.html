@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations</title>
+    <link rel="stylesheet" href="css/organizations.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="navstart">
+          <ul>
+            <li class="menu" onclick="mineur()"><i class="bx bx-menu"></i></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./Articles.html">Articles</a></li>
+            <li class="hideOnMobile"><a href="./organizations.html">organizations</a></li>
+            <li class="hideOnMobile">
+              <a href="./Products.html">Products</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navmiddle"></div>
+        <div class="navend">
+          <ul>
+            <li>ABOVE LIMIT</li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Landing Section -->
+    <section class="landing">
+        <div class="landing-content">
+            <h1>Welcome to Organizations</h1>
+            <p>Discover organizations making a difference. Learn more about their missions and get involved!</p>
+            <a href="#explore" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Filter and Tiles Section -->
+    <section class="tiles-section" id="explore">
+        <div class="filter-buttons">
+            <button onclick="filterTiles('all')" class="active">All</button>
+            <button onclick="filterTiles('education')">Mental Disabilities</button>
+            <button onclick="filterTiles('health')">Motor Disabilities</button>
+            <button onclick="filterTiles('environment')">Other</button>
+        </div>
+
+        <div class="tiles">
+            <!-- Mental Disabilities Tiles -->
+            <div class="tile education">
+                <img src="path/to/image1.jpg" alt="Association for the Mentally Handicapped" class="tile-image">
+                <div class="tile-content">
+                    <h2>Association for the Mentally Handicapped</h2>
+                    <p>Phone: +213 21 123 456</p>
+                    <p>Email: contact@amh.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image2.jpg" alt="Hope for Mental Health" class="tile-image">
+                <div class="tile-content">
+                    <h2>Hope for Mental Health</h2>
+                    <p>Phone: +213 21 654 321</p>
+                    <p>Email: info@hmh.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image3.jpg" alt="Mental Health Alliance" class="tile-image">
+                <div class="tile-content">
+                    <h2>Mental Health Alliance</h2>
+                    <p>Phone: +213 21 789 012</p>
+                    <p>Email: support@mha.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image4.jpg" alt="Together for Mental Health" class="tile-image">
+                <div class="tile-content">
+                    <h2>Together for Mental Health</h2>
+                    <p>Phone: +213 21 345 678</p>
+                    <p>Email: contact@tmh.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image5.jpg" alt="Algerian Association for Psychosocial Support" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algerian Association for Psychosocial Support</h2>
+                    <p>Phone: +213 21 456 789</p>
+                    <p>Email: info@aaps.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image6.jpg" alt="Mental Wellness Algeria" class="tile-image">
+                <div class="tile-content">
+                    <h2>Mental Wellness Algeria</h2>
+                    <p>Phone: +213 21 654 987</p>
+                    <p>Email: contact@mwa.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image7.jpg" alt="Algerian Mental Health Association" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algerian Mental Health Association</h2>
+                    <p>Phone: +213 21 987 654</p>
+                    <p>Email: info@amh.org</p>
+                </div>
+            </div>
+            <div class="tile education">
+                <img src="path/to/image8.jpg" alt="Support for Mental Health" class="tile-image">
+                <div class="tile-content">
+                    <h2>Support for Mental Health</h2>
+                    <p>Phone: +213 21 123 987</p>
+                    <p>Email: support@smh.org</p>
+                </div>
+            </div>
+            <!-- Motor Disabilities Tiles -->
+            <div class="tile health">
+                <img src="path/to/image9.jpg" alt="Algerian Association for Motor Disabilities" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algerian Association for Motor Disabilities</h2>
+                    <p>Phone: +213 21 246 135</p>
+                    <p>Email: contact@aamd.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image10.jpg" alt="Support for Physically Disabled" class="tile-image">
+                <div class="tile-content">
+                    <h2>Support for Physically Disabled</h2>
+                    <p>Phone: +213 21 753 951</p>
+                    <p>Email: info@spfd.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image11.jpg" alt="Motor Disability Advocacy" class="tile-image">
+                <div class="tile-content">
+                    <h2>Motor Disability Advocacy</h2>
+                    <p>Phone: +213 21 456 321</p>
+                    <p>Email: support@mda.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image12.jpg" alt="Mobility for All" class="tile-image">
+                <div class="tile-content">
+                    <h2>Mobility for All</h2>
+                    <p>Phone: +213 21 321 456</p>
+                    <p>Email: contact@mfa.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image13.jpg" alt="Empowerment for Disabled Individuals" class="tile-image">
+                <div class="tile-content">
+                    <h2>Empowerment for Disabled Individuals</h2>
+                    <p>Phone: +213 21 789 654</p>
+                    <p>Email: info@edi.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image14.jpg" alt="Access for All" class="tile-image">
+                <div class="tile-content">
+                    <h2>Access for All</h2>
+                    <p>Phone: +213 21 654 321</p>
+                    <p>Email: contact@afa.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image15.jpg" alt="Algerian Wheelchair Association" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algerian Wheelchair Association</h2>
+                    <p>Phone: +213 21 147 258</p>
+                    <p>Email: info@awa.org</p>
+                </div>
+            </div>
+            <div class="tile health">
+                <img src="path/to/image16.jpg" alt="Ability for All" class="tile-image">
+                <div class="tile-content">
+                    <h2>Ability for All</h2>
+                    <p>Phone: +213 21 369 258</p>
+                    <p>Email: support@afa.org</p>
+                </div>
+            </div>
+            <!-- Other Disabilities Tiles -->
+            <div class="tile environment">
+                <img src="path/to/image17.jpg" alt="Algerian Organization for the Disabled" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algerian Organization for the Disabled</h2>
+                    <p>Phone: +213 21 258 369</p>
+                    <p>Email: contact@aod.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image18.jpg" alt="Solidarity for the Disabled" class="tile-image">
+                <div class="tile-content">
+                    <h2>Solidarity for the Disabled</h2>
+                    <p>Phone: +213 21 753 951</p>
+                    <p>Email: info@sd.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image19.jpg" alt="Integration for All" class="tile-image">
+                <div class="tile-content">
+                    <h2>Integration for All</h2>
+                    <p>Phone: +213 21 951 753</p>
+                    <p>Email: support@ifa.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image20.jpg" alt="Algeria Disabled Support" class="tile-image">
+                <div class="tile-content">
+                    <h2>Algeria Disabled Support</h2>
+                    <p>Phone: +213 21 369 258</p>
+                    <p>Email: contact@ads.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image21.jpg" alt="Together for Inclusion" class="tile-image">
+                <div class="tile-content">
+                    <h2>Together for Inclusion</h2>
+                    <p>Phone: +213 21 123 987</p>
+                    <p>Email: info@tfi.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image22.jpg" alt="Supporting Disabled Children" class="tile-image">
+                <div class="tile-content">
+                    <h2>Supporting Disabled Children</h2>
+                    <p>Phone: +213 21 654 123</p>
+                    <p>Email: contact@sdchildren.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image23.jpg" alt="Advocates for Disabled Rights" class="tile-image">
+                <div class="tile-content">
+                    <h2>Advocates for Disabled Rights</h2>
+                    <p>Phone: +213 21 258 147</p>
+                    <p>Email: support@adr.org</p>
+                </div>
+            </div>
+            <div class="tile environment">
+                <img src="path/to/image24.jpg" alt="Dignity for All" class="tile-image">
+                <div class="tile-content">
+                    <h2>Dignity for All</h2>
+                    <p>Phone: +213 21 789 456</p>
+                    <p>Email: info@dfa.org</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="seeMoreBtn" onclick="seeMore()">See More</button>
+    </section>
+
+
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <!-- Service Tile 1 -->
+            <div class="service-tile" onclick="toggleService(this)">
+                <div class="service-title">Service 1</div>
+                <div class="service-content">
+                    <p>Contact us at:</p>
+                    <p>Email: service1@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+            <!-- Service Tile 2 -->
+            <div class="service-tile" onclick="toggleService(this)">
+                <div class="service-title">Service 2</div>
+                <div class="service-content">
+                    <p>Contact us at:</p>
+                    <p>Email: service2@example.com</p>
+                    <p>Phone: +1 (987) 654-3210</p>
+                </div>
+            </div>
+            <!-- Service Tile 3 -->
+            <div class="service-tile" onclick="toggleService(this)">
+                <div class="service-title">Service 3</div>
+                <div class="service-content">
+                    <p>Contact us at:</p>
+                    <p>Email: service3@example.com</p>
+                    <p>Phone: +1 (555) 111-2222</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="social-section">
+                <p>Follow and Support Us !</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/facebook-logo-24.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/instagram-logo-24 (1).png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/tiktok-logo-24.png" alt="TikTok"></a>
+                </div>
+                <p>Above Limit in your pocket</p>
+                <div class="app-links">
+                    <a href="#"><img src="./images/pngegg (1).png" alt="App Store"></a>
+             
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Products Catalogue</a></li>
+                    <li><a href="#">Glasses</a></li>
+                    <li><a href="#">AI</a></li>
+                </ul>
+            </div>
+      
+            <div class="footer-column">
+                <h3>Service conso</h3>
+                <ul>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">frequently asked questions </a></li>
+                    <li><a href="#">Above Limit hears you</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal Informations</h3>
+                <ul>
+                    <li><a href="#">Legal Mentions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Data protection policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Join US</h3>
+                <ul>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Legal Mentions - CGU - CGV - Personal data protection policy - No Cookies !</p>
+            <p>For your health, eat at least five fruits and vegetables a day.</p>
+            <p>FOR US DEPARTENT OF STATE</p>
+        </div>
+      </footer>
+        </body>
+      <script src="./js/organizations.js"></script>
+        
+          
+           <script src="./js/app.js"></script>
+          
+          <script src="https://code.responsivevoice.org/responsivevoice.js?key=Jstlz99b"></script>
+        </body>
+      </html>
+      
+</body>
+</html>
